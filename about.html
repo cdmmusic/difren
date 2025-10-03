@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — D:FREN</title>
+  <!-- Fonts & Tailwind -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { accent: '#7C3AED' },
+          fontFamily: { sans: ['Pretendard','ui-sans-serif','system-ui'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-neutral-900 bg-white antialiased">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white border-b border-gray-100">
+    <div class="container mx-auto max-w-screen-lg px-4">
+      <div class="h-16 flex items-center justify-between">
+        <a href="/" class="text-base font-semibold tracking-tight">
+          <svg width="145" height="16" viewBox="0 0 145 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.8412 0.883977C21.413 0.883977 27.384 6.71823 27.384 16.442C27.384 26.1657 21.413 32 11.9323 32H0.0814918V0.883977H11.8412ZM8.27072 25.0414H11.6285C16.4144 25.0414 19.1492 23.0055 19.1492 16.442C19.1492 9.87845 16.4144 7.84254 11.4157 7.84254H8.27072V25.0414ZM34.5856 13.6008C32.2762 13.6008 30.377 11.7472 30.4074 9.42265C30.377 7.15884 32.2762 5.32044 34.5856 5.32044C36.7734 5.32044 38.7182 7.15884 38.7485 9.42265C38.7182 11.7472 36.7734 13.6008 34.5856 13.6008ZM34.5856 28.5967C32.2762 28.5967 30.377 26.7431 30.4074 24.4185C30.377 22.1547 32.2762 20.3163 34.5856 20.3163C36.7734 20.3163 38.7182 22.1547 38.7485 24.4185C38.7182 26.7431 36.7734 28.5967 34.5856 28.5967ZM50.1463 32H41.9571V0.883977H63.6684V7.49309H50.1463V13.1298H62.3162V19.7541H50.1463V32ZM91.4155 32H82.497L76.9818 21.6229H73.7912V32H65.602V0.883977H78.881C85.8091 0.883977 90.3672 4.83425 90.3672 11.3978C90.3672 15.7127 88.392 18.7514 85.0495 20.3315L91.4155 32ZM76.9818 7.44751H73.7912V15.2417H76.9818C80.0509 15.2417 81.8437 14.1174 81.8437 11.3978C81.8437 8.66298 80.0509 7.44751 76.9818 7.44751ZM114.91 32H92.7273V0.883977H114.955V7.49309H100.917V13.1298H113.816V19.7541H100.917V25.3909H114.91V32ZM136.531 0.883977H144.72V32H137.868L126.306 15.2113H126.108V32H117.919V0.883977H124.908L136.288 17.6271H136.531V0.883977Z" fill="black"/>
+          </svg>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm text-gray-600">
+          <a href="/about" class="hover:text-black transition">About</a>
+          <a href="/index.html#artists" class="hover:text-black transition">Artists</a>
+          <a href="/index.html#apply" class="hover:text-black transition">지원하기</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Intro / Hero -->
+    <section class="py-20 md:py-32">
+      <div class="container mx-auto max-w-screen-lg px-4">
+        <div class="text-center mb-20">
+          <p class="text-xs tracking-wide uppercase text-gray-500">About D:FREN</p>
+          <h1 class="mt-2 text-2xl md:text-3xl font-semibold tracking-tight leading-tight break-keep">
+            디프렌은 인디 커뮤니티 브랜드입니다.
+          </h1>
+        </div>
+
+        <!-- Visual pair -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div class="lg:col-span-4">
+            <div class="rounded-2xl overflow-hidden">
+              <img src="/img/about-img-1.png" alt="" class="h-full w-full object-cover aspect-[3/4]" />
+            </div>
+          </div>
+          <div class="lg:col-span-8">
+            <div class="rounded-2xl overflow-hidden mb-8">
+              <img src="/img/about-img-2.png" alt="" class="h-full w-full object-cover aspect-[16/9]" />
+            </div>
+            <h2 class="text-xl md:text-2xl font-semibold tracking-tight break-keep mb-4">With D:FREN</h2>
+            <div class="space-y-2 text-sm text-gray-700 leading-relaxed break-keep">
+              <p>인디펜던트 아티스트들은 이제 혼자가 아닙니다.</p>
+              <p>아티스트들은 디프렌에서 음원/공연/콘텐츠 등을 서로 아낌없이 지원하고 교환하면서 새로운 영향력을 만듭니다.</p>
+              <p>그 영향력은 인디펜던트 아티스트 글로벌 시장 진출의 첫 걸음으로 이어집니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why D:FREN -->
+    <section class="py-16 md:py-24">
+      <div class="container mx-auto max-w-screen-lg px-4">
+        <h2 class="text-center text-3xl md:text-4xl font-semibold tracking-tight mb-12">Why D:FREN</h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+          <!-- Left: Difference Friend -->
+          <div>
+            <div class="rounded-2xl overflow-hidden mb-6">
+              <img src="/img/about-img-3.png" alt="" class="w-full h-full object-cover aspect-square" />
+            </div>
+            <h3 class="text-xl md:text-2xl font-semibold break-keep mb-2">Difference Friend</h3>
+            <p class="text-sm md:text-base text-gray-700 leading-relaxed break-keep">서로 다른 아티스트들이 연결되고 단합하여 화학하는 장을 만듭니다.</p>
+          </div>
+
+          <!-- Right: Indie Friend -->
+          <div>
+            <h3 class="text-xl md:text-2xl font-semibold break-keep mb-2">Indie Friend</h3>
+            <p class="text-sm md:text-base text-gray-700 leading-relaxed break-keep mb-6">인디펜던트 아티스트들이 새로운 음악적 경험과 가치를 세상에 펼치고 성장할 수 있는 환경을 제공합니다.</p>
+            <div class="rounded-2xl overflow-hidden">
+              <img src="/img/about-img-4.png" alt="" class="w-full h-full object-cover aspect-[3/4]" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-gray-100">
+    <div class="container mx-auto max-w-screen-xl px-4 text-center">
+      <p class="text-xs text-gray-500">© D:FREN</p>
+    </div>
+  </footer>
+</body>
+</html>
